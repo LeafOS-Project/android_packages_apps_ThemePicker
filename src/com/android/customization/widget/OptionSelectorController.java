@@ -285,6 +285,7 @@ public class OptionSelectorController<T extends CustomizationOption<T>> {
 
         Resources res = mContainer.getContext().getResources();
         mContainer.setAdapter(mAdapter);
+        mContainer.setItemAnimator(null);
         final int padding = res.getDimensionPixelSize(
                 R.dimen.option_tile_grid_padding_horizontal);
         final int fixWidth = res.getDimensionPixelSize(R.dimen.options_container_width);
